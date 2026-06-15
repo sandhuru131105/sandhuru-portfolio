@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandhuru Pichaiya | Web Developer & UI Enthusiast</title>
+  <meta name="description" content="Portfolio of Sandhuru Pichaiya – Junior Web Developer specializing in modern, animated UI/UX experiences. Based in India.">
+  <meta property="og:title" content="Sandhuru Pichaiya | Web Developer Portfolio">
+  <meta property="og:description" content="Junior Web Developer building modern, interactive web experiences with React, Tailwind CSS, and more.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
+</head>
+<body>
+
+  <!-- ── Preloader ── -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-text" id="preloader-text"></div>
+  </div>
+
+  <!-- ── Custom Cursor ── -->
+  <div class="cursor-follower" id="cursor"></div>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">it's me</a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#projects">
+        My Projects
+        <span class="nav-subtitle">See all of nice project I have done.</span>
+      </a>
+      <a href="#about">
+        About Me
+        <span class="nav-subtitle">Learn about my self what I do.</span>
+      </a>
+      <a href="#contact">
+        Contact me
+        <span class="nav-subtitle">sandhuru131105@gmail.com</span>
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO SECTION
+       ══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello!</p>
+      <h1 class="hero-name">I'm Sandhuru<br>Pichaiya</h1>
+      <div class="hero-role">
+        <span>Web Developer</span>
+        <span class="role-star">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/>
+          </svg>
+        </span>
+      </div>
+      <p class="hero-desc">
+        Hello! I'm Sandhuru. I'm a <strong>Web Developer, UI enthusiast, design thinker,</strong> 
+        experience strategist & creative problem solver from India 🇮🇳.
+      </p>
+      <ul class="hero-checklist">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Clean code, modern architecture
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Solve user pain points elegantly
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Responsive design & smooth animations
+        </li>
+      </ul>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Let's Talk</a>
+        <a href="https://github.com/sandhuru131105" target="_blank" class="btn-secondary">
+          View GitHub
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="hero-image-wrapper">
+        <img src="assets/images/hero.jpg" alt="Sandhuru Pichaiya - Web Developer" class="hero-img">
+        <div class="hello-badge">Hello 👋</div>
+        <div class="decorative-dots">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M20 0C20 11 29 20 40 20C29 20 20 29 20 40C20 29 11 20 0 20C11 20 20 11 20 0Z" fill="#0A0A0A"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SCROLLING MARQUEE
+       ══════════════════════════════════════════ -->
+  <section class="marquee-section">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        WEB DEVELOPMENT
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        REACT.JS
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        UI/UX DESIGN
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        FRONTEND
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        TAILWIND CSS
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        NEXT.JS
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        JAVASCRIPT
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        RESPONSIVE
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        WEB DEVELOPMENT
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        REACT.JS
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        UI/UX DESIGN
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        FRONTEND
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        TAILWIND CSS
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        NEXT.JS
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        JAVASCRIPT
+      </div>
+      <div class="marquee-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6z"/></svg>
+        RESPONSIVE
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SOCIAL BAR
+       ══════════════════════════════════════════ -->
+  <section class="social-bar">
+    <div class="social-links">
+      <a href="https://github.com/sandhuru131105" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        GITHUB
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LINKEDIN
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        TWITTER
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        INSTAGRAM
+      </a>
+    </div>
+    <div class="social-email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+      </svg>
+      sandhuru131105@gmail.com
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES SECTION
+       ══════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="section-label">MY SERVICES</div>
+    <div class="services-header">
+      <h2 class="reveal">WHAT I'M<br>OFFERING</h2>
+      <div class="services-header-right">
+        <p class="reveal reveal-delay-1">I build modern, responsive web experiences with clean code and animated interfaces that captivate users.</p>
+        <a href="#projects" class="btn-outline reveal reveal-delay-2">ALL SERVICES</a>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card active reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+            <path d="M7 8l3 3-3 3"/>
+            <line x1="13" y1="14" x2="17" y2="14"/>
+          </svg>
+        </div>
+        <h3>Frontend<br>Development</h3>
+        <a href="#projects" class="service-link">
+          READ MORE
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            <line x1="9" y1="9" x2="9.01" y2="9"/>
+            <line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+        </div>
+        <h3>UI/UX<br>Design</h3>
+        <a href="#projects" class="service-link">
+          READ MORE
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3>Responsive<br>Web Apps</h3>
+        <a href="#projects" class="service-link">
+          READ MORE
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <button class="scroll-down-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})" aria-label="Scroll down">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="5" x2="12" y2="19"/>
+        <polyline points="19 12 12 19 5 12"/>
+      </svg>
+    </button>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT SECTION
+       ══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-image-side reveal">
+        <div class="about-image-container">
+          <img src="assets/images/hero.jpg" alt="Sandhuru Pichaiya">
+        </div>
+        <div class="about-floating-card">
+          <div>
+            <div class="stat-number" id="projectCount">1+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-label reveal">ABOUT ME</div>
+        <h2 class="reveal">Building Digital<br>Experiences That<br>Inspire</h2>
+        <p class="reveal reveal-delay-1">
+          I'm Sandhuru Pichaiya, a passionate Junior Web Developer from India 🇮🇳. 
+          I love experimenting with animated UIs and bold color palettes, currently 
+          building projects with React + Tailwind CSS.
+        </p>
+        <p class="reveal reveal-delay-2">
+          Diving deep into frontend frameworks & responsive design, I aim to 
+          create modern, interactive experiences that delight users and solve 
+          real-world problems with clean, maintainable code.
+        </p>
+        <div class="about-stats reveal reveal-delay-3">
+          <div class="about-stat-item">
+            <span class="number" data-count="1">0</span>
+            <span class="label">Projects</span>
+          </div>
+          <div class="about-stat-item">
+            <span class="number" data-count="1">0</span>
+            <span class="label">Technologies</span>
+          </div>
+          <div class="about-stat-item">
+            <span class="number" data-count="6">0</span>
+            <span class="label">Months Exp.</span>
+          </div>
+          <div class="about-stat-item">
+            <span class="number" data-count="100">0</span>
+            <span class="label">% Passion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       EXPERIENCE SECTION
+       ══════════════════════════════════════════ -->
+  <section class="experience" id="experience">
+    <div class="experience-header">
+      <div class="experience-icon reveal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="1"/>
+        </svg>
+      </div>
+      <h2 class="reveal">EXPERIENCE</h2>
+      <p class="reveal reveal-delay-1">My journey as a developer — learning, building, and growing every day.</p>
+    </div>
+
+    <div class="experience-list">
+      <div class="experience-item reveal">
+        <div class="exp-left">
+          <h3>Frontend Development Projects</h3>
+          <p>Personal Projects · GitHub</p>
+        </div>
+        <div class="exp-right">
+          <span>Ongoing · 2026–Present</span>
+        </div>
+      </div>
+      <div class="experience-item reveal reveal-delay-1">
+        <div class="exp-left">
+          <h3>React + Tailwind CSS Development</h3>
+          <p>Self-Learning · Online Platforms</p>
+        </div>
+        <div class="exp-right">
+          <span>Duration · 6 Months</span>
+        </div>
+      </div>
+      <div class="experience-item reveal reveal-delay-2">
+        <div class="exp-left">
+          <h3>UI/UX Design Exploration</h3>
+          <p>Figma & Web Design · India</p>
+        </div>
+        <div class="exp-right">
+          <span>Duration · 6 Months</span>
+        </div>
+      </div>
+      <div class="experience-item reveal reveal-delay-3">
+        <div class="exp-left">
+          <h3>Web Development Foundations</h3>
+          <p>HTML, CSS, JavaScript · Self-Taught</p>
+        </div>
+        <div class="exp-right">
+          <span>Duration · 6 Months</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ══════════════════════════════════════════
+       TECH STACK
+       ══════════════════════════════════════════ -->
+  <section class="tech-stack" id="techstack">
+    <div class="tech-stack-header">
+      <div class="section-label reveal">TECH STACK</div>
+      <h2 class="reveal">Technologies I Work With</h2>
+      <p class="reveal reveal-delay-1">Tools and frameworks I use to bring ideas to life</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="#E34F26"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.076-.757.076-.771.076-.757H6.617l.68 7.755h7.322l-.347 3.5-2.395.655-2.395-.655-.186-1.972H7.14l.332 3.705L11.877 19.5l4.36-1.249.61-6.501H8.531z"/></svg>
+        HTML5
+      </div>
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="#1572B6"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L11.89 19.5l4.71-1.342L17.59 4.413z"/></svg>
+        CSS3
+      </div>
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="#F7DF1E"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.6-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+        JavaScript
+      </div>
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="#3178C6"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.42.276.69.394c.268.118.58.232.936.341.54.164 1.035.346 1.486.546.45.2.845.436 1.182.708.34.272.604.598.79.979.187.38.28.844.28 1.392 0 .644-.12 1.193-.36 1.648-.24.455-.583.828-1.027 1.118-.444.29-.975.5-1.594.631-.619.131-1.3.196-2.04.196-.5 0-1.025-.042-1.571-.127a9.02 9.02 0 0 1-1.47-.36v-2.578c.256.172.534.323.832.454.298.131.6.237.906.32.308.082.612.143.915.183.302.04.579.059.83.059.295 0 .553-.024.773-.07.22-.047.404-.115.552-.202.148-.087.258-.19.329-.31a.773.773 0 0 0 .107-.396.79.79 0 0 0-.177-.527c-.12-.157-.3-.3-.538-.428a5.526 5.526 0 0 0-.858-.362 15.21 15.21 0 0 0-1.13-.383c-.487-.159-.927-.34-1.322-.543a3.84 3.84 0 0 1-1.026-.727 3.12 3.12 0 0 1-.665-1.008c-.157-.392-.236-.85-.236-1.37 0-.606.126-1.13.378-1.571.252-.442.595-.805 1.028-1.09a4.58 4.58 0 0 1 1.493-.648 6.89 6.89 0 0 1 1.777-.227zm-8.735 1.137h2.556v8.363h-2.555v-8.363zM7.67 9.75H15v2.1H7.67V9.75z"/></svg>
+        TypeScript
+      </div>
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="#61DAFB"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.31 0-.592.068-.852.2-.856.44-1.28 1.64-1.204 3.373.019.422.076.867.166 1.332C3.324 7.03 1.894 8.318 1.011 9.661c-.458.698-.664 1.353-.66 1.933.01 1.172 1.006 2.1 2.722 2.813-.06.346-.097.708-.113 1.082-.075 1.742.35 2.952 1.21 3.396.266.136.555.2.856.2 1.35 0 3.12-.965 4.905-2.63 1.788 1.672 3.558 2.64 4.907 2.64.3 0 .583-.063.847-.2.86-.444 1.285-1.654 1.21-3.395a8.691 8.691 0 0 0-.113-1.082c1.716-.713 2.711-1.64 2.72-2.813.004-.58-.202-1.235-.66-1.933-.882-1.343-2.312-2.63-4.2-3.42.09-.466.148-.91.166-1.333.076-1.733-.348-2.932-1.204-3.373a1.534 1.534 0 0 0-.852-.2zm-.199 1.09c.707.363 1.008 1.313.945 2.756a10.4 10.4 0 0 1-.136 1.1c-1.049-.228-2.184-.367-3.37-.41-1.19-.044-2.198.163-2.987.513l.002-.003C12.817 4.04 14.31 2.893 15.342 2.893c.445 0 .766.138.936.298l.447-.786zM12 8.1c.74 0 1.477.034 2.202.093.166.264.338.535.517.814.18.28.354.567.52.864-.49.154-.993.327-1.505.52a18.6 18.6 0 0 0-1.734.78 18.68 18.68 0 0 0-1.734-.78 18.6 18.6 0 0 0-1.505-.52c.166-.297.34-.583.52-.864.179-.279.35-.55.517-.814.725-.059 1.462-.093 2.202-.093zm-3.36.53a19.38 19.38 0 0 0-.872 1.735 19.69 19.69 0 0 0-1.855.454c-.547-.87-.972-1.713-1.265-2.498a9.77 9.77 0 0 1 3.992.31zm6.72 0a9.769 9.769 0 0 1 3.992-.31c-.293.785-.718 1.628-1.265 2.498a19.69 19.69 0 0 0-1.855-.454A19.38 19.38 0 0 0 15.36 8.63zM12 10.275c.498 0 .992.017 1.478.05.243.408.48.83.707 1.264.22.42.424.849.615 1.283-.191.434-.394.863-.615 1.283a19.06 19.06 0 0 1-.707 1.264c-.486.033-.98.05-1.478.05s-.992-.017-1.478-.05a19.076 19.076 0 0 1-.707-1.264 19.41 19.41 0 0 1-.615-1.283c.191-.434.395-.863.615-1.283a19.06 19.06 0 0 1 .707-1.264c.486-.033.98-.05 1.478-.05zm-3.092.178a20.3 20.3 0 0 0-.616 1.216 20.63 20.63 0 0 0-.52 1.28 20.63 20.63 0 0 0 .52 1.28c.188.41.394.817.616 1.216-.484-.047-.955-.114-1.41-.197a17.89 17.89 0 0 1-.51-2.3 17.887 17.887 0 0 1 .51-2.298c.456-.083.927-.15 1.41-.197zm6.184 0c.484.047.955.114 1.41.197.218.734.392 1.5.51 2.298a17.887 17.887 0 0 1-.51 2.299c-.456.083-.927.15-1.41.197.222-.4.428-.806.616-1.216.192-.41.37-.835.52-1.28a20.63 20.63 0 0 0-.52-1.28 20.3 20.3 0 0 0-.616-1.215zm2.673.698c.547.87.972 1.713 1.265 2.498a9.769 9.769 0 0 1-3.992.31c.33-.55.626-1.126.872-1.735.63-.148 1.254-.315 1.855-.454-.001-.001 0-.619 0-.619zm-11.53.001c0 0 .001.618 0 .619.601.14 1.225.306 1.855.454.246.609.542 1.185.872 1.735a9.77 9.77 0 0 1-3.992-.31c.293-.785.718-1.628 1.265-2.498zM12 15.9c-.74 0-1.477-.034-2.202-.093a19.076 19.076 0 0 1-.517-.814 18.79 18.79 0 0 1-.52-.864c.49-.154.993-.327 1.505-.52.575.29 1.156.554 1.734.78.578-.226 1.159-.49 1.734-.78.512.193 1.015.366 1.505.52-.166.297-.34.583-.52.864-.179.279-.35.55-.517.814-.725.059-1.462.093-2.202.093z"/></svg>
+        React
+      </div>
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"/></svg>
+        Next.js
+      </div>
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="#06B6D4"><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg>
+        Tailwind CSS
+      </div>
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="#339933"><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.136,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z"/></svg>
+        Node.js
+      </div>
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="#F24E1E"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 8.137h-4.49c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.49v8.981zm-4.49-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.019V8.137h-3.019zm4.49 7.51h-4.49c-2.476 0-4.49 2.014-4.49 4.49s2.014 4.49 4.49 4.49 4.49-2.014 4.49-4.49v-4.49zm-4.49 7.51c-1.665 0-3.019-1.355-3.019-3.019s1.355-3.019 3.019-3.019h3.019v3.019c0 1.665-1.354 3.019-3.019 3.019zm8.981-3.019c0 2.476-2.014 4.49-4.49 4.49s-4.49-2.014-4.49-4.49 2.014-4.49 4.49-4.49 4.49 2.014 4.49 4.49zm-4.49 3.019c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019-3.019 1.355-3.019 3.019 1.354 3.019 3.019 3.019z"/></svg>
+        Figma
+      </div>
+      <div class="tech-item reveal">
+        <svg viewBox="0 0 24 24" fill="#F05032"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.66 2.66c.645-.222 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.72.719-1.886.719-2.604 0-.535-.535-.672-1.326-.405-1.985l-2.482-2.482v6.53c.174.088.34.197.486.341.72.721.72 1.884 0 2.604-.719.72-1.886.72-2.604 0-.72-.72-.72-1.885 0-2.604.177-.178.383-.312.604-.406V8.835c-.221-.094-.427-.228-.604-.406-.539-.536-.674-1.328-.404-1.985L7.987 3.787.452 11.32c-.604.603-.604 1.582 0 2.186l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.604-.603.604-1.584-.002-2.187z"/></svg>
+        Git
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER / CONTACT
+       ══════════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <div class="footer-main reveal">
+        <h2>Let's Build<br>Something<br>Amazing Together</h2>
+        <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hello, feel free to reach out!</p>
+        <a href="mailto:chandrupichaiya@gmail.com" class="footer-cta">
+          Get In Touch
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-column reveal reveal-delay-1">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column reveal reveal-delay-2">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/sandhuru131105" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="mailto:sandhuru131105@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sandhuru Pichaiya. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
